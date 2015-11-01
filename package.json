@@ -1,0 +1,37 @@
+{
+  "name": "daniel.chou",
+  "version": "0.0.1",
+  "description": "Wressly NPM package.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "~3.8.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/danielchou"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielchou"
+  },
+  "devDependencies": {
+    "babel-loader": "^5.3.2",
+    "crosscover": "^1.0.2",
+    "gulp": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-cssmin": "*",
+    "gulp-jshint": "*",
+    "gulp-livereload": "*",
+    "gulp-load-plugins": "*",
+    "gulp-minify-html": "*",
+    "gulp-uglify": "*",
+    "jquery": "^2.1.4",
+    "webpack": "^1.12.2"
+  },
+  "homepage": "https://github.com/danielchou"
+}

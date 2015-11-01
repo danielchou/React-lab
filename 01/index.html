@@ -1,0 +1,65 @@
+<html>
+<head>
+<link rel='stylesheet' href="node_modules/bootstrap/dist/css/bootstrap.css" />
+<link rel='stylesheet' href="node_modules/bootstrap/dist/css/bootstrap-theme.css" >
+</head>
+<body>
+
+<h1>Carousel</div>
+<style>
+  #carousel-test { width:700px; height: 360px; border:solid 2px red;  }
+  .carousel-caption { background-color: #aaa; opacity: 0.7; }  
+  .carousel-caption p { font-size: 16px; }
+  .carousel-inner > .item > img { }
+</style>
+
+<div id="carousel-test">
+<div class="bs-example" data-example-id="simple-carousel">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide [900x500]" src="" data-holder-rendered="true">
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+        <div class="item">
+          <img data-src="holder.js/900x500/auto/#555:#333/text:Second slide" alt="Second slide [900x500]" src="" data-holder-rendered="true">
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+        <div class="item active">
+          <img data-src="holder.js/900x500/auto/#555:#333/text:Third slide" alt="Third slide [900x500]" src="" data-holder-rendered="true">
+          <div class="carousel-caption">
+            <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/js/carousel.js"></script>
+<script src="main2.js"></script>
+
+</body>
+</html>
