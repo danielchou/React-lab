@@ -1,6 +1,11 @@
 var gulp =require("gulp"),
     connect = require("gulp-connect"),
     cssmin = require('gulp-cssmin'),
+    
+    gutil = require("gulp-util"),
+    //webpack = require("webpack"),
+    webpack = require('gulp-webpack')
+    
     $ = require("gulp-load-plugins")();  /* https://www.npmjs.com/package/gulp-load-plugins */
 
 gulp.task("js-min",function(){
@@ -105,6 +110,25 @@ gulp.task('css-min', function () {
     .pipe($.concat("main.min.css"))
     .pipe(gulp.dest('Content/dist'));
 });
+
+//https://www.npmjs.com/package/gulp-webpack
+gulp.task("watch",function(){
+    gulp.watch("app/**/*.js", function(e){
+        var pp=e.path.replace("main.js","");
+        console.log(pp);
+        
+        gulp.src(e.path)
+        .pipe(webpack( require("./webpack.config.js")))
+        .pipe(gulp.dest("."));
+    });
+});
+
+gulp.task("webpack", function(callback) {
+    return gulp.src("app/**/*.js")
+        .pipe(webpack( require("app/**/webpack.config.js")) )
+        .pipe(gulp.dest("./"));
+});
+
 
 //gulp.task("default",["connect","watch"]);
 //gulp.task("default", ["js-layout", "css-min", "minify-html-showroom", "js-showroom"]);

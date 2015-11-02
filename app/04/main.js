@@ -16,7 +16,7 @@ var Timer = React.createClass({
   },
   render: function() {
     return (
-      <div>Seconds Elapsed !!!! [: {this.state.secondsElapsed} ]</div>
+      <div>Seonds ##ee33#e2e#: {this.state.secondsElapsed} ]</div>
     );
   }
 });
