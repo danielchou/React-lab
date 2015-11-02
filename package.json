@@ -31,6 +31,8 @@
     "gulp-minify-html": "*",
     "gulp-uglify": "*",
     "jquery": "^2.1.4",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
     "webpack": "^1.12.2"
   },
   "homepage": "https://github.com/danielchou"
